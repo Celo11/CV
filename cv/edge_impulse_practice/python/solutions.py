@@ -115,7 +115,8 @@ def counts_to_ms2(df, counts_per_g=16384):
 def fill_missing(df, max_gap=3):
     """Fill short holes (a few empty cells) by straight-line interpolation.
 
-    Longer holes are left as NaN: inventing lots of data is worse than dropping it.
+    At most max_gap cells in a row are filled, and only inside the data.
+    Big holes in time (lost samples) are handled separately by split_at_gaps.
     """
     out = df.copy()
     out[AXES] = out[AXES].interpolate(limit=max_gap, limit_area="inside")

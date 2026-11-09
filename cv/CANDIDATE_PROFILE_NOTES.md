@@ -5,6 +5,7 @@ Last updated: 8 November 2026. Read this before making or editing any CV or answ
 ### Confirmed update - 9 November 2026
 - **Edge Impulse hands-on (before the Qualcomm interview):** he has tried Edge Impulse Studio himself and gone through two demos: an **audio** project and an **object/image classification** project. He was impressed by how quickly results came, even as a first-time user. Can be said in interviews: "I've tried it myself with the audio and image demos." Not commercial use.
 - **Qualcomm / Edge Impulse interview:** Senior Engineer, Solutions Engineering – Post-Sales Focus (remote UK). Interview Mon 9 Nov 2026, 18:30–19:15 UK, with Zin Thein Kyaw (Director of Customer Solutions Engineering). Prep: `QUALCOMM_EDGE_IMPULSE_INTERVIEW_PREP.md`, `QUALCOMM_CUSTOMER_SCENARIOS.md`.
+- **Qualcomm / Edge Impulse interview feedback (9 Nov 2026):** Zin said the most problematic part with customers is **data and feature extraction**. He plans to brush up on microcontroller C++ and pandas/numpy data cleaning and filtering in case of a next round. Practice pack: `edge_impulse_practice/` (README has a 10-session study plan).
 - **UNCONFIRMED:** "promoted almost every year" (he said this in a mock answer, 9 Nov). Confirm the actual titles and years before using it.
 
 ### Confirmed update - 8 November 2026
