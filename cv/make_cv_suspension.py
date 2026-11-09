@@ -25,7 +25,7 @@ def header(c, d):
     c.setFillColor(colors.white); c.setFont("Helvetica-Bold", 21)
     c.drawString(M, H-15*mm, "Muhammet Celal Gokalp")
     c.setFont("Helvetica", 10.0); c.setFillColor(colors.HexColor("#A8D5E2"))
-    c.drawString(M, H-21*mm, "System & Software Test Engineer  |  HiL / Bench Testing, CAN Diagnostics & Validation")
+    c.drawString(M, H-21*mm, "System & Software Test Engineer  |  Bench / Vehicle Testing, CAN Diagnostics & Validation")
     c.setFillColor(colors.white); c.setFont("Helvetica", 8.1)
     c.drawString(M, H-26.8*mm, "+44 7397 791625   |   muhammetcelalgokalp@gmail.com   |   Coventry, CV5 8HN, UK   |   British citizen")
     c.drawString(M, H-30.8*mm, "linkedin.com/in/celal-gökalp-4616ab122   |   Full UK driving licence   |   Immediately available")
@@ -59,7 +59,7 @@ def grid(rows, w1):
 
 s = []
 s += section("Professional Summary")
-s.append(Paragraph("Mechanical engineer with 8 years in automotive systems, software testing and validation: 2 years on-site at Jaguar Land Rover with AVL, then 5 years on an L4 automated driving system at FiveAI / Bosch. I enjoy hands-on work with vehicles, test rigs and hardware, and want to build my career in that direction. My background covers dSPACE HiL and ViL testing, vehicle and proving ground testing, Vector CANoe and CANape on CAN, fault-code and fuse checks, DOORS, ASPICE and ISO 26262, plus Python tools and log diagnosis. I have not yet worked on active suspension or seating systems, or used NI VeriStand / TestStand or CAPL, and I learn new tools and systems quickly. Based in Coventry (15 minutes from Nuneaton) and immediately available.", body))
+s.append(Paragraph("Mechanical engineer with 8 years in automotive systems, software testing and validation: 2 years on-site at Jaguar Land Rover with AVL, then 5 years on an L4 automated driving system at FiveAI / Bosch. I enjoy hands-on work with vehicles, test beds and hardware, and want to build my career in that direction. My background covers AVL's DrivingCube ViL test bed, vehicle and proving ground testing, Vector CANoe and CANape on CAN, fault-code and fuse checks, DOORS, ASPICE and ISO 26262, plus Python tools and log diagnosis. I have not yet worked on active suspension or seating systems, or operated HiL rigs (NI VeriStand / TestStand or dSPACE) or written CAPL scripts myself, and I learn new tools and systems quickly. Based in Coventry (15 minutes from Nuneaton) and immediately available.", body))
 
 s += section("Work Experience")
 s += job("Lead Application Engineer (Solutions &amp; Integration)", "FiveAI / Bosch", "Cambridge, United Kingdom", "10/2021 – 11/2026", [
@@ -69,8 +69,8 @@ s += job("Lead Application Engineer (Solutions &amp; Integration)", "FiveAI / Bo
 
 s += job("ADAS Systems Engineer (Feature Owner)", "AVL Powertrain UK", "Coventry, United Kingdom", "11/2018 – 10/2021", [
  "<b>OEM &amp; Tier 1 interaction:</b> Based on-site at Jaguar Land Rover for 2 years as feature owner for Rear Cross Traffic Alert, Blind Spot Monitor and Rear Pre-Crash; main technical link between JLR, AVL and the Tier 1 radar supplier.",
- "<b>HiL, ViL &amp; vehicle testing:</b> Wrote test cases for each system state and ran verification on dSPACE HiL and ViL rigs, in vehicles and on the proving ground. Used Vector CANoe and CANape to monitor CAN bus signals and log data, and tracked defects in RTC / RQM.",
- "<b>Root cause from logs:</b> An alert passed on the dSPACE HiL rig (where simulated objects bypassed the radar antenna) but fired late on the proving ground at a 45° approach. Designed a coarse-to-fine test matrix, synchronised camera, CAN and radar logs in CANoe, showed that targets near the edge of the field of view reached high confidence late, and ran boundary tests on site with the supplier to verify a calibration fix.",
+ "<b>Test cases &amp; vehicle verification:</b> Wrote test cases for each system state and ran verification in vehicles and on the proving ground. Used Vector CANoe and CANape to monitor CAN bus signals and log data, and tracked defects in RTC / RQM.",
+ "<b>Root cause from logs:</b> An alert passed in HiL testing (where simulated objects bypassed the radar antenna) but fired late on the proving ground at a 45° approach. Designed a coarse-to-fine test matrix, synchronised camera, CAN and radar logs in CANoe, showed that targets near the edge of the field of view reached high confidence late, and ran boundary tests on site with the supplier to verify a calibration fix.",
  "<b>Hands-on fault-finding:</b> When a module did not activate during vehicle tests, read fault codes, checked fuses for voltage or communication faults, and powered modules from a 12 V bench supply to test them. At the LEVC factory, ran multimeter checks (phase-to-phase resistance, continuity) on ~20 returned range-extender generators and powered the control unit from a bench supply to download supplier logs.",
  "<b>Vehicle dynamics &amp; HORIBA MIRA (Nuneaton):</b> On AVL's DrivingCube ViL project, built Simulink / IPG CarMaker scenarios, fitted an external GNSS for position ground truth on airstrip tests, drove a circuit at HORIBA MIRA (Nuneaton) to capture data to calibrate the simulation PID controller, and monitored logging health during runs.",
  "<b>Requirements &amp; safety:</b> Wrote use cases, state diagrams, module signal lists and high- to low-level requirements in DOORS and MKS Integrity (ASPICE V-model). Wrote ISO 26262 safety requirements for a lane change feature and took part in its FMEA; trained in ISO 26262 and SOTIF."])
@@ -83,7 +83,7 @@ s.append(Paragraph("<b>BSc Mechanical Engineering</b>, Ege University, Izmir, 20
 
 s += section("Skills &amp; Hands-on Experience")
 s.append(KeepTogether([grid([
- ("Testing &amp; diagnostics", "dSPACE HiL and ViL rigs, vehicle and proving ground testing, Vector CANoe and CANape, CAN, fault-code reading, multimeter and 12 V bench supply checks (all at AVL); KPI and log analysis (AVL &amp; FiveAI)"),
+ ("Testing &amp; diagnostics", "AVL DrivingCube (ViL dyno test bed), vehicle and proving ground testing, Vector CANoe and CANape, CAN, fault-code reading, multimeter and 12 V bench supply checks (all at AVL); KPI and log analysis (AVL &amp; FiveAI)"),
  ("Standards &amp; tools", "ASPICE V-model, ISO 26262 and FMEA, SOTIF (trained), DOORS, MKS Integrity, RTC / RQM (all at AVL); Jira, Confluence, Git, CI pipelines"),
  ("Software &amp; simulation", "Python (tools and scripts built with AI help), Linux (main workstation for 5 years), MATLAB / Simulink, IPG CarMaker, OpenSCENARIO 2; C++ (reading)"),
  ("Hands-on &amp; personal", "Repairs own cars (traced a parasitic battery drain on a Mercedes V12 to a faulty module by multimeter probing across fuses; torque wrench, calipers, micrometers), wired car audio, soldered motor cables to a PCB, builds desktop PCs"),

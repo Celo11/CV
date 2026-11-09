@@ -25,7 +25,7 @@ def header(c, d):
     c.setFillColor(colors.white); c.setFont("Helvetica-Bold", 21)
     c.drawString(M, H-15*mm, "Muhammet Celal Gokalp")
     c.setFont("Helvetica", 10.0); c.setFillColor(colors.HexColor("#A8D5E2"))
-    c.drawString(M, H-21*mm, "Systems & Validation Engineer  |  L4 Autonomy, Steering / Braking Features & HiL / Vehicle Test")
+    c.drawString(M, H-21*mm, "Systems & Validation Engineer  |  L4 Autonomy, Steering / Braking Features & Vehicle Test")
     c.setFillColor(colors.white); c.setFont("Helvetica", 8.0)
     c.drawString(M, H-26.8*mm, "+44 7397 791625   |   muhammetcelalgokalp@gmail.com   |   Coventry, CV5 8HN, UK   |   British citizen")
     c.drawString(M, H-30.8*mm, "linkedin.com/in/celal-gökalp-4616ab122   |   Full UK driving licence (commutable to Banbury)   |   Immediately available")
@@ -59,7 +59,7 @@ def grid(rows, w1):
 
 s = []
 s += section("Professional Summary")
-s.append(Paragraph("Mechanical and automotive engineer (BSc Mechanical; MSc Sustainable Automotive, WMG Warwick) with 8 years bridging physical vehicle systems and autonomous driving: 2 years on-site at Jaguar Land Rover with AVL managing features, requirements, Tier 1 suppliers and dSPACE HiL / vehicle testing, followed by 5 years on an L4 automated driving stack at FiveAI / Bosch. My strengths are on the systems integration, requirements, supplier coordination, steering/braking feature validation, CAN signal analysis and L4 autonomy side of this role. I have not designed production steer-by-wire or brake-by-wire mechanical hardware in CATIA or released 2D drawings with ASME Y14.5 GD&amp;T (my CAD work is in SolidWorks), and with 8 years of experience I am open to the level Zoox finds appropriate. Based in Coventry (commutable to Banbury) and immediately available.", body))
+s.append(Paragraph("Mechanical and automotive engineer (BSc Mechanical; MSc Sustainable Automotive, WMG Warwick) with 8 years bridging physical vehicle systems and autonomous driving: 2 years on-site at Jaguar Land Rover with AVL managing features, requirements, Tier 1 suppliers and vehicle / proving-ground testing, followed by 5 years on an L4 automated driving stack at FiveAI / Bosch. My strengths are on the systems integration, requirements, supplier coordination, steering/braking feature validation, CAN signal analysis and L4 autonomy side of this role. I have not designed production steer-by-wire or brake-by-wire mechanical hardware in CATIA or released 2D drawings with ASME Y14.5 GD&amp;T (my CAD work is in SolidWorks), and with 8 years of experience I am open to the level Zoox finds appropriate. Based in Coventry (commutable to Banbury) and immediately available.", body))
 
 s += section("Work Experience")
 s += job("Lead Application Engineer (Solutions &amp; Integration)", "FiveAI / Bosch", "Cambridge, United Kingdom", "10/2021 – 11/2026", [
@@ -71,7 +71,7 @@ s += job("ADAS Systems Engineer (Feature Owner)", "AVL Powertrain UK", "Coventry
  "<b>OEM &amp; Tier 1 supplier management:</b> Based on-site at Jaguar Land Rover for 2 years as feature owner for Rear Cross Traffic Alert (with braking request), Blind Spot Monitor and Rear Pre-Crash; main technical link between JLR, AVL and the Tier 1 radar supplier.",
  "<b>Steering torque PID &amp; ViL correlation (AVL DrivingCube):</b> Built Simulink / IPG CarMaker scenarios on circles of parameterised radius to find the steering-wheel torque needed at each radius. Fitted an external GNSS for position ground truth, captured vehicle response during airstrip steering-torque injection tests and HORIBA MIRA circuit runs, and ran parameter sweeps to calibrate the simulation steering torque PID controller.",
  "<b>Requirements &amp; functional safety (steering &amp; longitudinal features):</b> Wrote use cases, state diagrams, module input/output signal lists and high- to low-level requirements in DOORS and MKS Integrity (ASPICE V-model), including requirements for Lane Keep Assist, Lane Change Assist, Highway Assist and ACC. Wrote ISO 26262 safety requirements for a lane change feature and took part in its FMEA.",
- "<b>dSPACE HiL, vehicle testing &amp; CAN analysis:</b> Executed validation across dSPACE HiL and ViL rigs, vehicles and the proving ground using Vector CANoe and CANape. When RCTA braking/alerting passed on the HiL rig but fired late on the track at a 45° approach, synchronised camera, CAN and radar logs in CANoe, traced the delay to the edge of the radar's field of view, and verified the supplier's calibration fix on site.",
+ "<b>Vehicle testing &amp; CAN analysis:</b> Wrote test cases per system state and executed validation in vehicles and on the proving ground using Vector CANoe and CANape. When RCTA braking/alerting fired late on the track at a 45° approach, designed a coarse-to-fine test matrix, synchronised camera, CAN and radar logs in CANoe, traced the delay to the edge of the radar's field of view, and verified the supplier's calibration fix on site.",
  "<b>Electromechanical &amp; vehicle fault-finding:</b> Inspected ~20 returned range-extender generators at the LEVC factory (multimeter phase-to-phase resistance and continuity checks, bench-powering the control unit to download supplier logs). Checked test-vehicle control-arm fasteners with a torque wrench, and diagnosed vehicle module faults via DTCs, fuse checks and a 12 V bench supply."])
 
 s.append(Paragraph("<b>Mechanical Engineering Intern</b>, TEMSA Global, 2014: electric bus powertrain power and torque calculations in MATLAB / Simulink.", line))
@@ -82,7 +82,7 @@ s.append(Paragraph("<b>BSc Mechanical Engineering</b>, Ege University, Izmir, 20
 
 s += section("Skills &amp; Hands-on Experience")
 s.append(KeepTogether([grid([
- ("Testing, CAN &amp; rigs", "dSPACE HiL and ViL rigs, AVL DrivingCube (ViL dyno test bed), proving ground &amp; vehicle testing, Vector CANoe and CANape, CAN signal analysis, GNSS ground truth, multimeter &amp; 12 V bench supply (all at AVL)"),
+ ("Testing, CAN &amp; rigs", "AVL DrivingCube (ViL dyno test bed), proving ground &amp; vehicle testing, Vector CANoe and CANape, CAN signal analysis, GNSS ground truth, multimeter &amp; 12 V bench supply (all at AVL)"),
  ("Systems &amp; safety", "Technical requirements authoring &amp; decomposition, module signal lists, DOORS, MKS Integrity, RTC / RQM, ASPICE V-model, ISO 26262 &amp; FMEA, SOTIF (trained) (all at AVL); Jira, Confluence, UN R79, Euro NCAP"),
  ("Software &amp; modelling", "MATLAB / Simulink, IPG CarMaker, MotorCAD, SolidWorks (BSc), OpenSCENARIO 2, Python (tools built with AI help), Linux (5 years), Git, CI pipelines; C++ (reading). Not yet used: CATIA / 3DX, Polarion, ASME Y14.5 GD&amp;T"),
  ("Hands-on &amp; details", "Repairs own cars (multimeter fuse probing, torque wrench, calipers, micrometers), soldered motor cables to a PCB, builds PCs. British citizen, full UK driving licence, based in Coventry (commutable to Banbury), immediately available")], 0.22)]))

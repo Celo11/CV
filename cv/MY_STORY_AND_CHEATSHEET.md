@@ -10,7 +10,7 @@
 - **At Jaguar Land Rover (about 2 years)**, I was feature owner for three corner-radar features: Rear Cross Traffic Alert, Blind Spot Monitor and Rear Pre-Crash. I owned them from requirements to testing:
   - wrote use cases, state diagrams and requirements in DOORS and MKS Integrity (ASPICE V-model), breaking high-level requirements down to low-level ones
   - defined the signal list for every module and traced it against the state machines
-  - wrote test cases per state, ran them on HiL and ViL rigs, in vehicles and on the proving ground, and tracked defects in RTC/RQM
+  - wrote test cases per state, ran them in vehicles and on the proving ground, and tracked defects in RTC/RQM (I was not the one who operated the HiL rig)
   - I was the link between AVL, JLR and the radar supplier.
 - **Best story:** an alert was firing late at boundary conditions. I re-ran the tests, analysed the logs in CANoe/CANape and traced the cause to the radar's field of view, since detections get weaker at the edges. I agreed a fix with the supplier without adding false alerts.
 - **Other work at AVL:**
@@ -47,7 +47,7 @@
 - Feature owner: RCTA, BSM, Rear Pre-Crash (corner radar)
 - Use cases, state diagrams, requirements in DOORS / MKS (ASPICE)
 - Signal lists traced to state machines
-- Test cases per state; HiL, ViL, vehicle, proving ground
+- Test cases per state; vehicle & proving ground testing, DrivingCube ViL test bed (did not operate the HiL rig himself)
 - CANoe / CANape log analysis
 - RTC / RQM defects
 - Link between AVL, JLR and the supplier

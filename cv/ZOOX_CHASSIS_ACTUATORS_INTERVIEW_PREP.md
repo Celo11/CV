@@ -10,7 +10,7 @@
 
 "I'm Celal. I'm a mechanical and automotive engineer—I did my BSc in Mechanical Engineering and my MSc in Sustainable Automotive Engineering at WMG, University of Warwick—and I have eight years of experience sitting right between physical vehicle systems and autonomous driving. I live in Coventry, so Banbury is an easy commute for me down the M40.
 
-At AVL I spent two years based on-site at Jaguar Land Rover as feature owner for three corner-radar features, including Rear Cross Traffic Alert with a braking request, and also wrote requirements for Lane Keep Assist, Lane Change Assist, Highway Assist and ACC. I managed requirements in DOORS and MKS Integrity under the ASPICE V-model, wrote ISO 26262 safety requirements and took part in a lane-change FMEA, worked daily with the Tier 1 supplier, and ran validation across dSPACE HiL and ViL rigs and on the proving ground using Vector CANoe and CANape on CAN. On AVL's DrivingCube ViL project, I also built Simulink and IPG CarMaker scenarios to find the steering-wheel torque needed across turn radii, captured vehicle data on the airstrip and at HORIBA MIRA, and calibrated the simulation steering torque PID controller.
+At AVL I spent two years based on-site at Jaguar Land Rover as feature owner for three corner-radar features, including Rear Cross Traffic Alert with a braking request, and also wrote requirements for Lane Keep Assist, Lane Change Assist, Highway Assist and ACC. I managed requirements in DOORS and MKS Integrity under the ASPICE V-model, wrote ISO 26262 safety requirements and took part in a lane-change FMEA, worked daily with the Tier 1 supplier, and ran validation in vehicles and on the proving ground using Vector CANoe and CANape on CAN. On AVL's DrivingCube ViL project, I also built Simulink and IPG CarMaker scenarios to find the steering-wheel torque needed across turn radii, captured vehicle data on the airstrip and at HORIBA MIRA, and calibrated the simulation steering torque PID controller.
 
 For the last five years at FiveAI, now part of Bosch, I worked on an L4 automated driving stack, turning UN R79 automatic steering and Euro NCAP requirements into KPIs across 1,000+ hours of test data—including finding a curvature-related drop in lane-change success that led to a steering controller fix. Following Volkswagen Group's withdrawal from the project, my role at Bosch ended by redundancy, so I am immediately available and keen to get back to hands-on hardware and vehicle testing."
 
@@ -24,7 +24,7 @@ For the last five years at FiveAI, now part of Bosch, I worked on an L4 automate
 > Where I add immediate value is on the other half of this role's scope:
 > 1. **Bridging physical chassis behaviour and L4 autonomy:** I've worked on both sides—calibrating steering torque PID controllers on AVL's DrivingCube ViL test bed and evaluating L4 UN R79 steering KPIs across 1,000+ hours of data at FiveAI.
 > 2. **Requirements, ISO 26262 & Tier 1 supplier management:** I spent two years on-site at JLR decomposing system-to-component requirements in DOORS, defining module signal lists, writing ISO 26262 requirements, and driving supplier fixes.
-> 3. **dSPACE HiL, vehicle validation & Vector CANoe/CANape:** I'm hands-on in the lab and on the track—setting up test matrices, synchronising CAN and sensor logs in CANoe, and isolating whether a fault is in the hardware, calibration, or autonomy stack."
+> 3. **Vehicle validation & Vector CANoe/CANape:** I'm hands-on in the vehicle and on the track—setting up test matrices, synchronising CAN and sensor logs in CANoe, and isolating whether a fault is in the hardware, calibration, or autonomy stack."
 
 ---
 
@@ -48,7 +48,7 @@ For the last five years at FiveAI, now part of Bosch, I worked on an L4 automate
 ### Story 3: Braking Request / Corner Radar Boundary Fix with Tier 1 Supplier (AVL at JLR)
 - **Goal:** Rear Cross Traffic Alert with a braking request had to alert at least 2.0 s before collision.
 - **What you did:**
-  - On the dSPACE HiL rig (where simulated objects were fed to the ECUs on the vehicle CAN bus, bypassing the radar antenna), all tests passed.
+  - In HiL testing (run by the HiL team, where simulated objects were fed to the ECUs on the vehicle CAN bus, bypassing the radar antenna), all tests passed.
   - On the proving ground at a 45° parking approach, the system either failed to alert/brake or triggered only ~0.5 s before impact.
   - Designed a coarse-to-fine test matrix across approach angles (30/45/60°), target speeds (10–40 mph), and ego reversing speeds (up to 10 mph in 2 mph steps).
   - Synchronised camera timestamps, CAN global time, and the radar module counter in a Vector CANoe layout, proving that targets near the edge of the radar's field of view reached high confidence too late.

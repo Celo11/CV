@@ -25,10 +25,10 @@ def header(c, d):
     c.setFillColor(colors.white); c.setFont("Helvetica-Bold", 21)
     c.drawString(M, H-15*mm, "Muhammet Celal Gokalp")
     c.setFont("Helvetica", 10.0); c.setFillColor(colors.HexColor("#A8D5E2"))
-    c.drawString(M, H-21*mm, "Mechanical, Systems & Test Engineer  |  Rotating Machinery, Controls & HiL Validation")
+    c.drawString(M, H-21*mm, "Mechanical, Systems & Test Engineer  |  Rotating Machinery, Controls & Test-Bed Validation")
     c.setFillColor(colors.white); c.setFont("Helvetica", 8.1)
     c.drawString(M, H-26.8*mm, "+44 7397 791625   |   muhammetcelalgokalp@gmail.com   |   Coventry, CV5 8HN, UK   |   British citizen")
-    c.drawString(M, H-30.8*mm, "linkedin.com/in/celal-gökalp-4616ab122   |   Full UK driving licence   |   Immediately available")
+    c.drawString(M, H-30.8*mm, "linkedin.com/in/celal-gökalp-4616ab122   |   DOB: 12/04/1993   |   Full UK driving licence   |   Immediately available")
     c.restoreState()
 
 doc = BaseDocTemplate("Muhammet_Celal_Gokalp_CV_Turbines.pdf", pagesize=A4,
@@ -59,7 +59,7 @@ def grid(rows, w1):
 
 s = []
 s += section("Professional Summary")
-s.append(Paragraph("Mechanical engineer (BSc Mechanical Engineering; MSc Sustainable Automotive Engineering, WMG Warwick) with 8 years in systems engineering, control validation, HiL / test-bed testing and fault-finding at AVL Powertrain UK and FiveAI / Bosch. My background includes stator thermal modelling and thermocouple test design for rotating electrical machines (MotorCAD, Portunus, Simulink), hands-on electrical checks on returned range-extender generators at the LEVC factory, PID controller calibration on AVL's DrivingCube dyno test bed, and requirements/safety engineering (DOORS, ASPICE V-model, ISO 26262, FMEA). I have not yet worked on gas, steam or wind turbines, and I am keen to move from automotive into the turbine and energy sector. I love hands-on work with hardware and test rigs, learn new systems quickly, and am immediately available in Coventry.", body))
+s.append(Paragraph("Mechanical engineer (BSc Mechanical Engineering; MSc Sustainable Automotive Engineering, WMG Warwick) with 8 years in systems engineering, control validation, test-bed / vehicle testing and fault-finding at AVL Powertrain UK and FiveAI / Bosch. My background includes stator thermal modelling and thermocouple test design for rotating electrical machines (MotorCAD, Portunus, Simulink), hands-on electrical checks on returned range-extender generators at the LEVC factory, PID controller calibration on AVL's DrivingCube dyno test bed, and requirements/safety engineering (DOORS, ASPICE V-model, ISO 26262, FMEA). I have not yet worked on gas, steam or wind turbines, and I am keen to move from automotive into the turbine and energy sector. I love hands-on work with hardware and test beds, learn new systems quickly, and am immediately available in Coventry.", body))
 
 s += section("Work Experience")
 s += job("Lead Application Engineer (Solutions &amp; Integration)", "FiveAI / Bosch", "Cambridge, United Kingdom", "10/2021 – 11/2026", [
@@ -71,7 +71,7 @@ s += job("ADAS Systems Engineer (Feature Owner)", "AVL Powertrain UK", "Coventry
  "<b>Generator &amp; rotating-machine fault-finding (LEVC factory):</b> Inspected ~20 returned faulty range-extender generators at the London Taxi factory following a test procedure: performed multimeter checks at specified connector pins (phase-to-phase resistance, continuity), powered the control unit from a low-voltage bench supply to download fault logs with the supplier's logging tool, and sent measurements and data to the supplier for root cause analysis.",
  "<b>Dyno test bed &amp; PID calibration (AVL DrivingCube):</b> Compared a real system, a chassis dyno with sensor emulation and a MATLAB / Simulink + IPG CarMaker model. Fitted external ground-truth instrumentation (GNSS), captured test data at HORIBA MIRA and on the airstrip, calibrated the model and swept PID controller gains, and monitored logging health during test-bed runs.",
  "<b>Requirements, state machines &amp; safety:</b> Based on-site at Jaguar Land Rover for 2 years as feature owner for three safety-related features. Wrote use cases, system state diagrams, module input/output signal lists and high- to low-level requirements in DOORS and MKS Integrity (ASPICE V-model). Wrote ISO 26262 safety requirements and took part in an FMEA.",
- "<b>HiL / rig validation &amp; supplier root cause:</b> Ran verification on dSPACE HiL and ViL rigs and on the proving ground, using Vector CANoe and CANape and tracking defects in RTC / RQM. Synchronised camera, bus and sensor logs to trace a boundary timing fault and verified the supplier's calibration fix on site. Diagnosed module faults via fault codes, fuse checks and a 12 V bench supply."])
+ "<b>Verification &amp; supplier root cause:</b> Wrote test cases for each system state and ran verification in vehicles and on the proving ground, using Vector CANoe and CANape and tracking defects in RTC / RQM. Synchronised camera, bus and sensor logs to trace a boundary timing fault and verified the supplier's calibration fix on site. Diagnosed module faults via fault codes, fuse checks and a 12 V bench supply."])
 
 s.append(Paragraph("<b>Mechanical Engineering Intern</b>, TEMSA Global, 2014: calculated power and torque requirements for a new electric bus powertrain in MATLAB / Simulink, and supported quality work on the production line.", line))
 
@@ -82,7 +82,7 @@ s.append(Paragraph("<b>BSc Mechanical Engineering</b>, Ege University, Izmir, 20
 s += section("Skills &amp; Hands-on Experience")
 s.append(KeepTogether([grid([
  ("Rotating machines &amp; thermal", "Electric motor stator thermal network modelling &amp; thermocouple test design (MotorCAD, Portunus, Simulink – MSc); range-extender generator resistance, continuity &amp; log checks (LEVC); powertrain sizing (TEMSA)"),
- ("Testing, rigs &amp; controls", "dSPACE HiL and ViL rigs, AVL DrivingCube dyno test bed, PID gain sweeps, MATLAB / Simulink, Vector CANoe / CANape, multimeter &amp; 12 V bench supply fault-finding (all at AVL); KPI &amp; log analysis (AVL &amp; FiveAI)"),
+ ("Testing, test beds &amp; controls", "AVL DrivingCube (ViL dyno test bed), vehicle &amp; proving ground testing, PID gain sweeps, MATLAB / Simulink, Vector CANoe / CANape, multimeter &amp; 12 V bench supply fault-finding (all at AVL); KPI &amp; log analysis (AVL &amp; FiveAI)"),
  ("Systems &amp; safety", "Requirements decomposition, state diagrams, module signal lists, DOORS, MKS Integrity, RTC / RQM, ASPICE V-model, FMEA &amp; ISO 26262 (all at AVL); Jira, Confluence, technical lead for 5 engineers (FiveAI)"),
  ("Software &amp; hands-on", "Python (tools and pipelines built with AI help), Linux (5 years), Git, SolidWorks. Hands-on: repairs own cars (multimeter fuse probing, torque wrench, calipers, micrometers), soldered motor cables to a PCB, builds PCs"),
  ("Languages &amp; details", "English (C2), Turkish (native). British citizen, full UK driving licence, based in Coventry (close to Warwick / Rugby / Derby), immediately available")], 0.24)]))

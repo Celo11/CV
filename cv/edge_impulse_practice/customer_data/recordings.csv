@@ -1,0 +1,11 @@
+file,machine,session,label,customer_notes
+machineA_session1_normal.csv,A,s1,normal,"Customer: 1 kHz, m/s^2"
+machineA_session2_normal.csv,A,s2,normal,"Customer: 1 kHz, m/s^2"
+machineA_session3_fault.csv,A,s3,fault,"Customer: 1 kHz, m/s^2"
+machineA_session4_fault.csv,A,s4,fault,"Customer: 1 kHz, m/s^2"
+machineB_run1_normal.csv,B,r1,normal,Customer: logged straight from sensor
+machineB_run2_fault.csv,B,r2,fault,Customer: logged straight from sensor
+machineB_run3_normal.csv,B,r3,normal,Customer: logged straight from sensor
+machineB_run4_fault.csv,B,r4,fault,Customer: logged straight from sensor
+machineC_normal.csv,C,c1,normal,"Customer: 1 kHz, m/s^2"
+machineC_fault.csv,C,c2,fault,"Customer: 1 kHz, m/s^2"

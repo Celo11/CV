@@ -9,7 +9,7 @@
 
 "I'm Celal. I'm a mechanical engineer with eight years in test, validation and customer-facing support, and I want to build the next stage of my career around hands-on hardware work at customer sites.
 
-At AVL I spent two years based on-site at Jaguar Land Rover as feature owner for three corner-radar features, running tests on dSPACE HiL and ViL rigs, in vehicles and on the proving ground, and working between the customer, AVL and the hardware supplier. When modules failed to activate in vehicle tests, I read fault codes, checked fuses, and powered modules from a 12 V bench supply to find the cause. At the LEVC London Taxi factory, I also inspected about 20 returned faulty range-extender generators, carrying out multimeter checks at connector pins, powering the control unit from a bench supply to download logs with the supplier's tool, and sending the data and reports to the supplier for root cause analysis.
+At AVL I spent two years based on-site at Jaguar Land Rover as feature owner for three corner-radar features, running tests in vehicles and on the proving ground, supporting AVL's DrivingCube ViL test bed, and working between the customer, AVL and the hardware supplier. When modules failed to activate in vehicle tests, I read fault codes, checked fuses, and powered modules from a 12 V bench supply to find the cause. At the LEVC London Taxi factory, I also inspected about 20 returned faulty range-extender generators, carrying out multimeter checks at connector pins, powering the control unit from a bench supply to download logs with the supplier's tool, and sending the data and reports to the supplier for root cause analysis.
 
 For the last five years at FiveAI, now part of Bosch, I trained Volkswagen Group partner engineers on our simulation toolchain and was a founding member of our solutions team. I used Linux as my main workstation, diagnosed errors from logs between APIs and simulation tools, and built Python utilities and reporting pipelines. Following Volkswagen Group's withdrawal from the project, my role at Bosch ended by redundancy today, so I am immediately available and happy to travel across the UK and internationally."
 
@@ -33,7 +33,7 @@ For the last five years at FiveAI, now part of Bosch, I trained Volkswagen Group
 > - Performed multimeter checks at specified connector pins (phase-to-phase resistance, continuity), powered the control unit from a low-voltage bench supply so the supplier's logging device could connect and download the fault logs, and sent the measurements and logs to the supplier's engineering team for root cause analysis.
 > 
 > **Story 2 (JLR corner radar boundary failure):**
-> - Rear Cross Traffic Alert passed all tests on the dSPACE HiL rig (where simulated objects bypassed the radar antenna), but gave no alert or alerted late (~0.5 s vs 2 s requirement) on the proving ground at a 45° approach.
+> - Rear Cross Traffic Alert passed all tests in HiL testing (where simulated objects bypassed the radar antenna), but gave no alert or alerted late (~0.5 s vs 2 s requirement) on the proving ground at a 45° approach.
 > - Designed a coarse-to-fine test matrix, synchronised camera timestamps, CAN global time and the radar module counter in CANoe, and showed that targets near the edge of the radar's field of view reached high confidence late.
 > - A supplier engineer came on site, we ran the boundary tests together, and we verified a calibration fix across three candidate calibrations without adding false alerts.
 
